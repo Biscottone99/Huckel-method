@@ -6,7 +6,7 @@ program huckel
   integer,allocatable:: bond(:,:)
   real*8,allocatable::hx(:),nz(:),ham(:,:), w(:), work(:), coords(:,:), charge(:), x(:,:), y(:,:), z(:,:)
   ac=0
-  bc=-8.760442803
+  bc=-1.
   pi =dacos(-1.d0)
 
   open(1,file='input.dat')
