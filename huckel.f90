@@ -65,18 +65,18 @@ program huckel
   risene=energy-ne*bc
     
   write(2,*) 'GROUND STATE ENERGY=',energy
-  write(2,*) 'RISONANCE ENERGY FOR GS=', dabs(risene)
+  write(2,*) 'GS RISONANCE ENERGY=', dabs(risene)
   energy=0.d0
   do i=1,ne/2-1
      energy=energy+2*w(i)
   enddo
   energy=energy+w(ne/2)+w(ne/2+1)
-  write(2,*) 'ENERGY OF FIRST EXCITED STATE=', energy
+  write(2,*) 'FIRST EXCITED STATE ENERGY=', energy
   energy=-w(ne/2)+w(ne/2+1)
   write(2,*) 'EXITATION ENERGY', energy
 
 
-  !=========================CARICHE=========================
+  !=========================CHARGES=========================
   write(2,*)
   write(2,*) 'GROUND STATE ATOMIC CHARGES'
   check=0
@@ -93,7 +93,7 @@ program huckel
 
   write(2,*) 'TOTAL CHARGE=',check
   write(2,*)
-  write(2,*) 'CHARGES OF FIRST EXCITED STATE'
+  write(2,*) 'FIRST EXCITED STATE CHARGES'
   check=0
   do i=1,nsiti
      q=0.d0
@@ -110,7 +110,7 @@ program huckel
   write(2,*) 'TOTAL CHARGE=',check
 
   write(2,*)
-  !=========================ORDINI DI LEGAME=========================
+  !=========================BONDS ORDERS=========================
 
   write(2,*) 'BOND ORDERS'
   do i=1,nl
@@ -121,8 +121,8 @@ program huckel
      write(2,*) bond(i,1), bond(i,2), bo
   enddo
   write(2,*)
-  !=========================MOMENTI DI DIPOLO=========================
-  write(2,*) 'MOMENTS OF PERMANENT DIPOLE'
+  !=========================PERMANENT DIPOLE MOMENTS=========================
+  write(2,*) 'PERMANENT DIPOLE MOMENTS'
 
   mux=0
   muy=0
@@ -137,8 +137,8 @@ program huckel
   write(2,*) 'Y COMPONENT=',muy
   write(2,*) 'Z COMPONENT=',muz
   write(2,*)
-  !=========================MOMENTI DI DIPOLO DI TRANSIZIONE=========================
-  write(2,*) 'MOMENTS OF TRANSITION DIPOLE'
+  !=========================TRANSITION DIPOLE MOMENTS=========================
+  write(2,*) 'TRANSITION DIPOLE MOMENTS'
  
   do j=ne/2,1, -1
      do k=ne/2+1, nsiti
