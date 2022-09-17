@@ -1,5 +1,5 @@
 # Huckel-method
-This program allows you to study a generic π-coniugated molecule with extended Huckel model. The program gives you as an output (file output.dat) the following information:
+This program allows you to study a generic π-conjugated molecule with extended Huckel model. In output (file output.dat) the program gives you the following information:
 1. Huckel Hamiltonian;
 2. Eigenvalues;
 3. Eigenvectors;
