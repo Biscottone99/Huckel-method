@@ -4,7 +4,7 @@ This program allows you to study a generic π-conjugated molecule with extended 
 2. Eigenvalues;
 3. Eigenvectors;
 4. Ground state energy;
-5. Risonance energy for ground state;
+5. Ground state risonance energy;
 6. First excited state energy;
 7. Exitation energy from gs to first excited state;
 8. Ground state atomic charges;
