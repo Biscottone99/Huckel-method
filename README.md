@@ -20,10 +20,11 @@ All this information are given to you as energetic units in function of alpha an
 Hamiltonian matrix parameter values are calculated with the following formulae [Quantum chemistry - Levine - 5th edition]:
 
 α_X = α_c + h_x * β_cc
+
 β_xy = k_xy * β_cc
 
 To use this program you have to write an input file (name 'input.dat', i. e. uploaded file) whith the following information:
-- In the firt row you have to put in: numerber of atoms in π system, number of p-electrons, number of bonds in the molecule. Between each information you have to leave a space and not to put a [,].
+- In the firt row you have to put in: number of atoms in π system, number of p-electrons, number of bonds in the molecule. Between each information you have to leave a space and not putting a [,].
 - For every atom of your molecule you have to put in these information in the given order: atom number, h_x value, number of p-electrons, x coordinate, y coordinate, z coordinate. One row contains the information of a single atom.
 - For every bond you have to put in these information in the following order: number of first atom in the bond, number of first atom in the bond, k_xy value. One row contains the information of a single bond.
 
