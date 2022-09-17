@@ -15,9 +15,10 @@ This program allows you to study a generic π-conjugated molecule with extended 
 13. Single excitation transition with their energy.
 14. Absorption spectra.
 
-All this information are given to you as energetic units in function of alpha and beta. You can obtain all the results in real energy value by changing the parameters "ac" (carbon value of α) and "bc" (carbon value of β). β values are always negative and the program already consider it: to put in the spectroscopic or thermodinic β, only absolute value have to be considered.
+All this information are given to you as energetic units in function of alpha and beta. You can obtain all the results in real energy value by changing the parameters "ac" (carbon value of α) and "bc" (carbon value of β). β values are always negative and the program already consider it: to put in the spectroscopic or thermodinic β, only absolute value has to be considered.
 
 Hamiltonian matrix parameter values are calculated with the following formulae [Quantum chemistry - Levine - 5th edition]:
+
 α_X = α_c + h_x * β_cc
 β_xy = k_xy * β_cc
 
